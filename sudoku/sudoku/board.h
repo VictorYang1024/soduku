@@ -1,7 +1,6 @@
 #pragma once
 #include <vector>
 
-
 struct Grid {
 	char Val;
 	std::vector<char> AvailVal;
