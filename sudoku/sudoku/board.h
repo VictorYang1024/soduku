@@ -1,15 +1,14 @@
 #pragma once
 #include <vector>
 
-struct Grid {
-	char Val;
-	std::vector<char> AvailVal;
-};
 
-class Board {
+
+class BoardMng {
 public:
 	void Init(const char(&initBoard)[9][9]);
-	void Display()const;
+	const char(&getBoard()const)[9][9];
+	
 private:
-	Grid Board[9][9];
+	char Board[9][9];
+	std::vector<char> AvailVal[9][9];
 };
